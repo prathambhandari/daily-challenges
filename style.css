@@ -1,0 +1,166 @@
+@font-face {
+  font-family: light;
+  src: url("./LufgaLight.ttf");
+}
+@font-face {
+  font-family: reg;
+  src: url("./LufgaRegular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+nav {
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > h2 {
+  font-family: reg;
+  color: white;
+}
+.options {
+  padding: 5px 30px;
+
+  border-radius: 50px;
+  color: white;
+  background-color: #1a1a1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options > a {
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  font-family: light;
+}
+
+.options > a::after {
+  content: "";
+  display: block;
+  width: 24px;
+  position: absolute;
+  height: 3px;
+  background: #d5fa02;
+  border-radius: 2px;
+  margin: 10px 20% 10px 20%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.options > a:hover::after {
+  opacity: 1;
+}
+.icn {
+  padding: 5px;
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icn > i {
+  font-size: larger;
+  color: white;
+}
+button {
+  padding: 18px 35px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #d5fa02;
+  color: white;
+}
+
+.head-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 40px;
+}
+.head-text > h1 {
+  font-family: light;
+  font-weight: 100;
+  font-size: 80px;
+}
+.head-text > h1:nth-child(2) {
+  font-family: reg;
+  font-weight: 600;
+}
+
+#arrow {
+  position: absolute;
+  height: 100px;
+  left: 25%;
+  top: 35%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 100px;
+  align-items: center;
+}
+.monkey4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.monkey4 > img {
+  background-color: #1a1a1c;
+  border-radius: 100px;
+  padding: 20px;
+}
+.monkey4 > p {
+  width: 230px;
+  color: white;
+  font-family: light;
+  text-align: justify;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  font-family: reg;
+}
+.update > div > h1 {
+  font-size: 50px;
+}
+.update > div > p {
+  font-size: 15px;
+}
+.update > img {
+  height: 80px;
+  margin-top: 10px;
+}
+.line {
+  width: 150px;
+  height: 1px;
+  margin-top: 20px;
+  background-color: #d5fa02;
+}
