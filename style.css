@@ -80,7 +80,7 @@ nav > h2 {
   font-size: larger;
   color: white;
 }
-button {
+.icn button {
   padding: 18px 35px;
   border-radius: 50px;
   background-color: transparent;
@@ -130,6 +130,7 @@ button {
   background-color: #1a1a1c;
   border-radius: 100px;
   padding: 20px;
+  align-self: center;
 }
 .monkey4 > p {
   width: 230px;
@@ -163,4 +164,128 @@ button {
   height: 1px;
   margin-top: 20px;
   background-color: #d5fa02;
+}
+
+/* page 2 */
+
+#main2 {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+.trending {
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: light;
+}
+.trending h3 {
+  color: #d5fa02;
+}
+
+.buttons button {
+  padding: 15px 25px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid #dadada;
+  color: white;
+}
+
+.buttons > button i {
+  font-size: 30px;
+}
+.buttons button:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+#arrow2 {
+  position: absolute;
+  height: 100px;
+  right: 70%;
+  bottom: -25%;
+}
+#clip {
+  background-color: #490383;
+  width: 220px;
+  height: 280px;
+  border: 5px solid #aaaaaa;
+  clip-path: polygon(
+    39% 0,
+    51% 15%,
+    99% 15%,
+    100% 100%,
+    50% 100%,
+    49% 87%,
+    1% 87%,
+    0 0
+  );
+}
+#clip > img {
+  height: 200px;
+  object-fit: cover;
+  transform: translateX(-50px);
+  margin-top: 45px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  height: 70%;
+}
+#card {
+  background-color: #1a1a1c;
+  color: white;
+  font-family: light;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#time > p:nth-child(1) {
+  position: absolute;
+  right: 20%;
+  top: 3%;
+}
+#time > p:nth-child(2) {
+  position: absolute;
+  right: 15%;
+  bottom: 84%;
+}
+
+.eth {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+}
+
+.eth > i {
+  position: absolute;
+  left: 7%;
+  bottom: 8%;
+  color: orange;
+}
+.eth > p {
+  position: absolute;
+  left: 15%;
+  bottom: 8%;
+}
+.cardcom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.cardcom > button {
+  display: flex;
+  background-color: #1a1a1c;
+  border: none;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 3px 1px #490383;
 }
